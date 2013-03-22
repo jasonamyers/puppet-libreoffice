@@ -3,7 +3,7 @@
 ## Usage
 
 ```puppet
-include Libreoffice
+include libreoffice
 ```
 
 ## Required Puppet Modules
