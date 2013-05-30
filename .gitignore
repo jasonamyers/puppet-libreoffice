@@ -3,5 +3,10 @@
 /spec/fixtures/.librarian
 /spec/fixtures/.tmp
 /spec/fixtures/Puppetfile.lock
-/spec/fixtures/modules
+
+# Changed to /* so that an un-exclude rule will be processed
+# http://stackoverflow.com/questions/5533050/gitignore-exclude-folder-but-include-specific-subfolder
+/spec/fixtures/modules/*
+!/spec/fixtures/modules/libreoffice/
+
 /spec/fixtures/vendor
