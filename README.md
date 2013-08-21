@@ -6,6 +6,14 @@
 
 ```puppet
 include libreoffice
+
+## default language is 'de'
+include libreoffice::languagepack
+
+## or set your own locale
+class { 'libreoffice::languagepack':
+  locale => 'de'
+}
 ```
 
 ## Required Puppet Modules
