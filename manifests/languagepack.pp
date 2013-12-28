@@ -12,6 +12,6 @@
 class libreoffice::languagepack ($locale = 'de') {
   package { 'LibreOffice LanguagePack':
     provider => 'appdmg',
-    source   => "http://download.documentfoundation.org/libreoffice/stable/4.1.3/mac/x86/LibreOffice_4.1.3_MacOS_x86_langpack_${locale}.dmg",
+    source   => "http://download.documentfoundation.org/libreoffice/stable/4.1.4/mac/x86/LibreOffice_4.1.4_MacOS_x86_langpack_${locale}.dmg",
   }
 }
