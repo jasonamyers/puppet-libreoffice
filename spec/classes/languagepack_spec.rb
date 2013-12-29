@@ -8,7 +8,7 @@ describe 'libreoffice::languagepack' do
   context "default language" do
     it do
       should contain_package('LibreOffice LanguagePack').with({
-       :source   => 'http://download.documentfoundation.org/libreoffice/stable/4.1.3/mac/x86/LibreOffice_4.1.3_MacOS_x86_langpack_de.dmg',
+       :source   => 'http://download.documentfoundation.org/libreoffice/stable/4.1.4/mac/x86/LibreOffice_4.1.4_MacOS_x86_langpack_de.dmg',
        :provider => 'appdmg'
       })
     end
@@ -17,13 +17,13 @@ describe 'libreoffice::languagepack' do
   context "other language" do
     let(:params) do
       {
-        :locale => 'en_GB'
+        :locale => 'en-GB'
       }
     end
 
     it do
       should contain_package('LibreOffice LanguagePack').with({
-        :source   => 'http://download.documentfoundation.org/libreoffice/stable/4.1.3/mac/x86/LibreOffice_4.1.3_MacOS_x86_langpack_en_GB.dmg',
+        :source   => 'http://download.documentfoundation.org/libreoffice/stable/4.1.4/mac/x86/LibreOffice_4.1.4_MacOS_x86_langpack_en-GB.dmg',
         :provider => 'appdmg'
       })
     end
