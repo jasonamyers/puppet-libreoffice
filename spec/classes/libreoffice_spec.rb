@@ -14,7 +14,7 @@ describe 'libreoffice' do
     should contain_class('libreoffice')
 
     should contain_package("LibreOffice-#{version}").with({
-      :source   => "http://download.documentfoundation.org/libreoffice/stable/#{version}/mac/x86/LibreOffice_#{version}_MacOS_x86.dmg",
+      :source   => "http://download.documentfoundation.org/libreoffice/stable/#{version}/mac/x86_64/LibreOffice_#{version}_MacOS_x86-64.dmg",
       :provider => 'appdmg'
     })
   end
